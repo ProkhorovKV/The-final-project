@@ -62,10 +62,11 @@
 	
 	margin-top: 50px;
 	
+	
 }
 .center-product-hardware img {
 	height: 320px;
-	box-shadow: 0 0 50px 20px black;
+	
 }
 
 
@@ -73,6 +74,8 @@
 .hardware-pc {
 	width: 1260px;
 	margin: 0 auto;
+	
+	
 	
 
 	h1 {
@@ -88,7 +91,13 @@
 	height: 320px;
 	
 	margin: 0 auto;
-	background: linear-gradient(to left bottom, gray, black);
+	background-color: #111111;
+	
+	border-left: 2px solid  #f8f8f8;
+	border-top: 2px solid  #f8f8f8;
+	border-right: 2px solid  #f8f8f8;
+	border-top-right-radius: 15px;
+	
 	
 
 }
@@ -97,11 +106,15 @@
 	height: 320px;
 	
 	margin: 0 auto;
+	background-color: #111111;
+	border-left: 2px solid  #f8f8f8;
+	border-right: 2px solid  #f8f8f8;
+	
 
 	img {
 		float: right;
 	}
-	background: linear-gradient(to left bottom, black, gray);
+	
 	
 }
 .center-product-hardware-row3 {
@@ -109,8 +122,31 @@
 	height: 320px;
 	
 	margin: 0 auto;
-	background: linear-gradient(to left bottom, gray, black);
+	background-color: #111111;
+	border-left: 2px solid  #f8f8f8;
+	border-bottom: 2px solid  #f8f8f8;
+	border-right: 2px solid  #f8f8f8;
+	border-bottom-right-radius: 15px;
 	
+	
+	
+}
+
+.hardware-row-description {
+	
+	width: 48%;
+	height: 100%;
+	
+	float: right;
+	margin-right: 5%;
+	
+
+	p {
+		margin-top: 50px;
+		font-size: 18px;
+		padding: 20px;
+		
+	}
 }
 				
 			
