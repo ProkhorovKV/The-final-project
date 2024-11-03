@@ -55,6 +55,18 @@
 	}
 }
 
+.info-buy-price {
+	
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 15px;
+	
+	p {
+		margin-top: 25px;
+	}
+}
+
 
 .center-product-hardware {
 	width: 100%;

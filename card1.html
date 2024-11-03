@@ -8,15 +8,21 @@
 		@import url("html.css");
 		@import url("card.css");
 	</style>
+	<script defer src="main.js"></script>
 </head>
 <body>
 	<div class="background-site-grad">
 		
 		<div class="top-line-info">
-			<div class="top-line-logo-div">
+			<div class="top-line-logo-div" onclick="openMainPage('html.html')">
 				<img src="img/logo.jpg" class="top-line-logo">
 			</div>
 		</div>
+		<script>
+			function openMainPage(page) {
+				window.open(page);
+			}
+		</script>
 
 
 
@@ -32,6 +38,7 @@
 						<li>Видеокарта : NVIDIA GEFORCE GTX 1660 SUPEG</li>
 					</ul>
 				</details>
+				<div class="info-buy-price" data-id="0"></div>
 			</div>
 		</div>
 
