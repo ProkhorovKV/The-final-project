@@ -40,7 +40,7 @@ function addBasket(dataId) {
     let localBasket = JSON.parse(localStorage.getItem("localBasket")) || [];
 
     let poiskOnPc = pc.find(pcId => pcId.id == dataId);
-    basket.push(poiskOnPc);
+    
     
 
     localBasket.push(poiskOnPc);
