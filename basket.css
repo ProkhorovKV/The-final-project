@@ -3,6 +3,8 @@
 	margin: 0 auto;
 	background-color: #111111;
 	border-radius: 15px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	
 	
 	
@@ -47,3 +49,131 @@
 	}
 
 }
+
+.loadBasket {
+	width: 250px; 
+	height: 50px; 
+	
+	margin: 0 5px 0 5px;
+	float: left;
+	cursor: pointer;
+
+	p {
+		font-size: 26px;
+	
+	}
+	
+}
+
+.loadOrder {
+	width: 700px; 
+	height: 50px; 
+	
+	margin: 0 5px 0 5px;
+	float: left;
+	cursor: pointer;
+
+	p {
+		font-size: 26px;
+	}
+	
+}
+
+.info-panel {
+	width: 1260px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+.order {
+	width: 1260px;
+	min-height: 560px;
+	
+	background-color: #111111;
+	border-radius: 15px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+
+.orderdivRow {
+	position: relative;
+	margin: 15px;
+	
+
+}
+
+.orderdivImg {
+	width: 100px;
+	height: 100px;
+	
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.orderdivH {
+	position: absolute;
+	min-width: 240px;
+	
+	top: 0;
+	left: 115px;
+
+	h3 {
+		color: #f8f8f8;
+		font-size: 18px;
+	}
+	h4 {
+		color: #f8f8f8;
+		font-size: 14px;
+	}
+	
+
+}
+
+.orderFIO {
+	float: right;
+	width: 600px;
+	height: 400px;
+	background: linear-gradient(to left bottom, gray, rgb(25, 24, 24));	
+	margin: 25px 150px 0 0;
+	border: 2px solid #f8f8f8;
+	border-radius: 25px;
+
+	p {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
+	input {
+		width: 80%;
+		height: 50px;
+		margin: 25px;
+		margin-left: 10%;
+		border: 2px solid #f8f8f8;
+		border-radius: 15px;
+		background-color: rgb(44, 52, 52);
+		text-align: center;
+		color: #f8f8f8;
+		font-family: Roboto-local, sans-serif;
+		font-size: 22px;
+		
+	}
+}
+

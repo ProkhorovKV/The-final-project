@@ -98,4 +98,74 @@ function clearBasket() {
 
 
 
+// ОФОРМИТЬ ЗАКАЗ
+function viewOrder() {
+    const getLS = JSON.parse(localStorage.getItem("localBasket"));
+
+    let order = document.querySelector(".order");
+
+    order.style.display = "block";
+
+    order.innerHTML = "";
+
+    // создание основного окна 
+    let orderFIO = document.createElement("div");
+    orderFIO.classList.add("orderFIO");
+    // заголовок
+    let p = document.createElement('p');
+    p.innerText = "Введите ваши данные";
+    orderFIO.append(p);
+    // имя, почта и адрес
+    const nameInput = document.createElement('input');
+    nameInput.type = 'text';
+    nameInput.id = 'name';
+    nameInput.placeholder = 'Кирилл';
+    orderFIO.append(nameInput);
+
+    const emailInput = document.createElement('input');
+    emailInput.type = 'email';
+    emailInput.id = 'email';
+    emailInput.placeholder = 'mail@mail.ru';
+    orderFIO.append(emailInput);
+
+    const addressInput = document.createElement('input');
+    addressInput.type = 'text';
+    addressInput.id = 'address';
+    addressInput.placeholder = 'Г. Кемерово ул. Федоровского 22 д. 19';
+    orderFIO.append(addressInput);
+
+    
+
+
+    order.append(orderFIO);
+    
+    for (let i = 0; i < getLS.length; i++) {
+        
+        let divRow = document.createElement("div"); divRow.classList.add("orderdivRow");
+        let divH = document.createElement("div"); divH.classList.add("orderdivH");
+
+        let creatH3 = document.createElement("h3"); creatH3.innerText = getLS[i].name;
+        let creatH4 = document.createElement("h4"); creatH4.innerText = "Цена: " + getLS[i].price + "руб";
+        
+
+        divH.append(creatH3); divH.append(creatH4); 
+        
+        let divImg = document.createElement("div"); divImg.classList.add("orderdivImg");
+        let imgOnDiv = document.createElement("img"); imgOnDiv.src = getLS[i].img;
+
+        divImg.append(imgOnDiv);
+        divRow.append(divImg);
+        
+        divRow.append(divH);
+        order.append(divRow);
+
+
+        
+    }
+
+
+}
+
+
+
 

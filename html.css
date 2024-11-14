@@ -61,6 +61,15 @@ p {
 	}
 }
 
+.top-line-order-div {
+	width: 40px;
+	height: 34px;
+	background-color: aqua;
+	position: absolute;
+	right: 80px;
+	top: 20px;
+}
+
 .top-video-div {
 	width: 1260px;
 	
